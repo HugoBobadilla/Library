@@ -22,7 +22,7 @@
                     <div id="close">&times;</div>
                 </div>
                 
-                <form>
+                <form id="add-book-form" onsubmit="addBookToLibrary">
                     <div>
                         <label for="author">Author</label>
                         <input type="text" id="author">
@@ -39,53 +39,11 @@
                         <label for="read">Read</label>
                         <input type="checkbox" id="read">
                     </div>
-                    <button type="submit">Add</button>
+                    <button id="addBookBtn" type="submit">Add</button>
                 </form>
             </div>
         </div>
-        <div class="books-container">
-            <div class="book">
-                <h2 class="title">The Hobbit</h2>
-                <p class="author"><span>Author: </span>Hugo Bobadilla</p>
-                <p class="pages"><span>Pages: </span>350</p>
-                <p class="read"><span>Read: </span>Yes</p>
-            </div>
-
-            <div class="book">
-                <h2 class="title">The Hobbit</h2>
-                <p class="author"><span>Author: </span>Hugo Bobadilla</p>
-                <p class="pages"><span>Pages: </span>350</p>
-                <p class="read"><span>Read: </span>Yes</p>
-            </div>
-
-            <div class="book">
-                <h2 class="title">The Hobbit</h2>
-                <p class="author"><span>Author: </span>Hugo Bobadilla</p>
-                <p class="pages"><span>Pages: </span>350</p>
-                <p class="read"><span>Read: </span>Yes</p>
-            </div>
-
-            <div class="book">
-                <h2 class="title">The Hobbit</h2>
-                <p class="author"><span>Author: </span>Hugo Bobadilla</p>
-                <p class="pages"><span>Pages: </span>350</p>
-                <p class="read"><span>Read: </span>Yes</p>
-            </div>
-
-            <div class="book">
-                <h2 class="title">The Hobbit</h2>
-                <p class="author"><span>Author: </span>Hugo Bobadilla</p>
-                <p class="pages"><span>Pages: </span>350</p>
-                <p class="read"><span>Read: </span>Yes</p>
-            </div>
-
-            <div class="book">
-                <h2 class="title">The Hobbit</h2>
-                <p class="author"><span>Author: </span>Hugo Bobadilla</p>
-                <p class="pages"><span>Pages: </span>350</p>
-                <p class="read"><span>Read: </span>Yes</p>
-            </div>
-        </div>
+        <div id="books-container"></div>
     </main>
 
     <script src="app.js"></script>

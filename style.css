@@ -27,7 +27,7 @@ header h1 {
     text-align: center;
 }
 
-.books-container {
+#books-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -35,20 +35,20 @@ header h1 {
 }
 
 @media (max-width: 870px) {
-    .books-container {
+    #books-container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .books-container {
+    #books-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .books-container {
+    #books-container {
         display: block;
     }
 
@@ -77,7 +77,7 @@ header h1 {
 .book p {
     font-size: 1.3rem;
     margin: 10px 0px;
-    padding-left: 30px;
+    
 }
 
 /* FORM STYLES */
@@ -171,4 +171,19 @@ form > button {
 #close {
     cursor: pointer;
     font-size: 30px;
+}
+
+/* BOOK */
+.title {
+    height: 80px;
+}
+
+.author {
+    height: 30px;
+    line-height: 1;
+}
+
+.book {
+    width: 250px;
+    padding: 0px 30px;
 }
